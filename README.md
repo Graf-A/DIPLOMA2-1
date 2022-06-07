@@ -62,4 +62,6 @@ docker-compose -f docker-compose-postgresql.yml down
 java -jar aqa-shop.jar
 ```
 5. Открыть веб-страницу http://localhost:8080 через браузер 
+6. Запускаем тесты оплаты тура банковской картой через класс CardPaymentTest с помощью IntelliJ IDEA
+7. Запускаем тесты оплаты тура кредитной картой через класс CreditPaymentTest с помощью IntelliJ IDEA
  
