@@ -63,8 +63,6 @@ public class CreditPaymentTest {
     }
 
 
-
-    
     @Test
     void shouldFormEmpty() {
         var PayByCard = new DashboardPage();//открываем dashboard
