@@ -5,9 +5,9 @@
 ### Документация:
  1. План автоматизации (файл [Plan.md](https://github.com/Oksana-Zett/DIPLOMA2/blob/master/Plan.md))
 
- 1. Отчет о проведённом тестировании (файл [Report.md](https://github.com/Oksana-Zett/DIPLOMA2/blob/master/Report.md)
+ 1. Отчет о проведённом тестировании (файл [Report.md](https://github.com/Oksana-Zett/DIPLOMA2/blob/master/Report.md))
  
- 1. Отчёт о проведённой автоматизации (файл [Summary.md](https://github.com/Oksana-Zett/DIPLOMA2/blob/master/Summary.md)
+ 1. Отчёт о проведённой автоматизации (файл [Summary.md](https://github.com/Oksana-Zett/DIPLOMA2/blob/master/Summary.md))
 
 ### Необходимое ПО для реализации процедуры:
 1. GitHub
