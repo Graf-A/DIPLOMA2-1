@@ -1,18 +1,6 @@
 package page;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.withText;
-import static com.codeborne.selenide.Selenide.*;
-
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import lombok.val;
-import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.withText;
@@ -22,11 +10,8 @@ public class DashboardPage {
     private SelenideElement heading = $(withText("Путешествие дня"));
     private SelenideElement button1 = $(withText("Купить"));
     private SelenideElement button2 = $(withText("Купить в кредит"));
-
-    private ElementsCollection cards = $$(".list__item");
-    private final String balanceStart = "баланс: ";
-    private final String balanceFinish = " р.";
-
+    private SelenideElement textControlPayByCard = $(withText("Оплата по карте"));
+    private SelenideElement textControlPayByCreditCard = $(withText("Кредит по данным карты"));
 
     public DashboardPage() {
         heading.shouldBe(visible);
@@ -34,5 +19,15 @@ public class DashboardPage {
         button2.shouldBe(visible);
     }
 
+    public PaymentPage PaymentByCard(){
+        button1.click();
+        textControlPayByCard.shouldBe(visible);
+        return new PaymentPage();
+    }
+    public PaymentPage PaymentByCredit(){
+        button2.click();
+        textControlPayByCreditCard.shouldBe(visible);
+        return new PaymentPage();
+    }
 
 }
